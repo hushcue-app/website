@@ -136,6 +136,42 @@ Explain Hushcue in 10 seconds, show it working, earn trust (private, honest, ope
 - **Style:** short, confident, specific. Plain words, no buzzwords.
 - **Numbers:** only true ones (for example measured answer speed, install size, cost per interview), and only once they are measured.
 
+### Showing Hushcue before it is built
+The app is still being built, so the site shows it in three stages.
+
+**Stage 1: design the app's live UI first, as one look for app and site.**
+- **What gets designed:** the live bar, the main panel (one for each mode), the chat panel, the bird, the stealth check dialog and the home screen.
+- **Everything follows the site's design direction:** the same fonts, colours and radii. The app's Phase 1 builds from these designs too.
+- **So the website never shows a product that looks different from the real one.**
+
+**Stage 2: interactive "product scenes" on the site, coded rather than filmed.**
+- **What a scene is:** the live window recreated in code from those designs, playing a scripted session. For example:
+  - an interviewer's question appears in the transcript
+  - the answer streams in word by word
+  - the visitor can drag the transparency slider and switch between Interview, Coding, Meeting and Online assessment
+- **The stealth explainer** is a scene too: slide between "you see" (the call, with Hushcue's answers on top) and "they see" (the same call, with Hushcue gone).
+- **Why code instead of video:**
+  - sharp at every size
+  - tiny to load
+  - follows light and dark themes
+  - updates when the design changes
+- **Every scene carries a small "Interactive preview" label.**
+- **Scripted content is fictional:**
+  - an invented role and company, an invented candidate
+  - no real people, no real companies, no one's actual resume
+- **The scripted answers must be good answers.** They are the product's first impression.
+
+**Stage 3: real proof, once each part works.**
+- As each part of the app ships, add real screen recordings and screenshots next to, or instead of, the scenes.
+- Example: once the app's live bar exists, a 10-second real clip of it answering in a call.
+- The scenes stay, because they explain things well. The recordings prove they are real.
+
+**Honesty rules while the app is unfinished:**
+- **A status badge on every feature:** **Available**, **In development** or **Planned**. Today almost everything is In development, and that is fine. Open-source projects that show their roadmap earn trust.
+- **Download page:** says "Coming soon" until there is a real installer. Its main call to action is "Get notified" or "Watch on GitHub" (the second only once the repo is public).
+- **Never invent:** testimonials, user counts, download numbers, company logos, ratings or press quotes.
+- **No numbers until they are measured:** answer speed, install size and cost per interview appear only once measured.
+
 ### Quality gate (how "premium" is checked)
 - **Direction first:** the visual direction is approved by Cyrus **before** the pages are built (first pull request, §5).
 - **Screenshots in every visual pull request:** at 1440 px and 390 px wide, in light and dark themes.
@@ -200,9 +236,10 @@ Explain Hushcue in 10 seconds, show it working, earn trust (private, honest, ope
    - a short moodboard
    - the chosen fonts, colour tokens (dark and light), spacing scale and radii
    - a designed home-page hero (in Figma, or coded as a single page)
+   - **the app's live window designs** (§2, "Showing Hushcue before it is built": Stage 1). The site and the app share this one look.
    - **Nothing else gets built until this is approved.**
 2. **Project scaffold:** linting, the design tokens as code, the base layout (header, footer), and the theme switch.
-3. **The home page:** placeholder product visuals, and the stealth "you see / they see" explainer.
+3. **The home page:** the interactive product scenes (scripted, labelled "Interactive preview") and the stealth "you see / they see" explainer.
 4. **More pages:** Features, Download and Pricing (with the cost calculator).
 5. **Docs and legal:** Docs (MDX), Privacy, Responsible use, Terms and the 404 page.
 6. **Finishing:** SEO metadata, Open Graph images, the sitemap, and the Lighthouse pass.

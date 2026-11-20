@@ -21,6 +21,12 @@
   - the site must look **very good, clear and premium** (`docs/BRIEF.md` §2)
   - the product is the hero, with restraint and one accent colour
   - Cyrus approves the visual direction (fonts, colours, hero) **before** any pages are built (2026-11-20)
+- **Showing the app before it exists:**
+  - design the app's live UI first, as one shared look for app and site
+  - the site shows it with coded, scripted "product scenes" labelled "Interactive preview"
+  - real recordings are added as each part ships
+  - every feature has a status badge (Available / In development / Planned)
+  - never invent testimonials, user counts, logos or numbers (2026-11-20)
 - **What the site is:** the website for Hushcue (desktop app repo: `hushcue-app/hushcue`). The pages are listed in `docs/BRIEF.md`. (2026-11-20)
 - **Domain:** `hushcue.app` was free on 2026-11-19. It is not bought yet.
 - **Stack:** Next.js + TypeScript + Tailwind is suggested, not settled. The first pull request may propose otherwise. (2026-11-20)
