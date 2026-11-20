@@ -21,6 +21,11 @@
   - the site must look **very good, clear and premium** (`docs/BRIEF.md` §2)
   - the product is the hero, with restraint and one accent colour
   - Cyrus approves the visual direction (fonts, colours, hero) **before** any pages are built (2026-11-20)
+- **Quality reference: railway.com,** chosen by Cyrus (2026-11-20).
+  - **What to learn:** the product drawn in code on the page, a mode switcher under the hero scene, and the same anatomy in every section (label pill → serif headline → short text → three feature rows → product scene).
+  - **Scroll effects:** gentle fade-ins only, with no heavy parallax or scroll hijacking.
+  - **What never to copy:** Railway's own signature pieces (the track rail, the split-flap board, the sky art, their words and colours).
+  - **Our signatures:** a sound-wave progress line, the mode switcher, and the "you see / they see" stealth slider.
 - **Showing the app before it exists:**
   - design the app's live UI first, as one shared look for app and site
   - the site shows it with coded, scripted "product scenes" labelled "Interactive preview"

@@ -20,15 +20,23 @@ Explain Hushcue in 10 seconds, show it working, earn trust (private, honest, ope
 | **Privacy** | `/privacy` | See below |
 
 ### Home (`/`)
-1. **Hero:** one-line promise, a sub-line, Download and "View on GitHub" buttons.
-2. **Demo:** a short looping clip of the live window answering a question.
-3. **The four modes:** Interview, Coding, Meeting, Online assessment.
-4. **How it works:** 3 steps (listen → understand → answer).
-5. **The stealth explainer:** "what you see vs. what they see".
-6. **Privacy and bring-your-own-key.**
-7. **AI interview practice:** marked "coming later".
-8. **FAQ:** 5–6 questions.
-9. **A final call to action.**
+A Railway-style story, explained in §2 under "The reference: Railway-level polish".
+1. **Hero:**
+   - a serif headline (two lines at most) and a one-line sub-line
+   - Download and "View on GitHub" buttons
+   - a **large product scene** below: the live window over a realistic video call, in a framed window on an atmospheric background of our own design
+   - a **mode switcher** under the scene: Interview · Coding · Meeting · Assessment. It swaps the scene in place.
+2. **One section per idea,** each built the same way (§2 "Section anatomy"):
+   - **Interview:** "Know what to say when the question lands." Live answers from your resume and the job post.
+   - **Coding:** reads the problem on your screen; gives the approach, code and complexity, or hints only.
+   - **Meeting and Notetaker:** live notes, decisions, action items, and talking points when you are asked.
+   - **Online assessment:** the likely answer, with an honest confidence level.
+   - **Stealth (the signature section):** the interactive "you see / they see" slider.
+   - **Yours only:** bring your own key, local storage, no tracking, open source.
+   - **AI interview practice:** rehearse against an AI interviewer. Badge: Planned.
+3. **Proof:** once real, GitHub stars, releases and contributor counts, pulled live. Until then this section does not exist; never use invented numbers.
+4. **FAQ:** 5–6 questions.
+5. **The final call to action,** then the footer.
 
 ### Features (`/features`)
 1. **One section per mode:** Interview, Coding, Meeting, Online assessment.
@@ -171,6 +179,37 @@ The app is still being built, so the site shows it in three stages.
 - **Download page:** says "Coming soon" until there is a real installer. Its main call to action is "Get notified" or "Watch on GitHub" (the second only once the repo is public).
 - **Never invent:** testimonials, user counts, download numbers, company logos, ratings or press quotes.
 - **No numbers until they are measured:** answer speed, install size and cost per interview appear only once measured.
+
+### The reference: Railway-level polish
+Cyrus's chosen bar is **railway.com**: clean, professional, and showing what the product is straight from the landing page.
+
+**Patterns to learn from:**
+- **The product is drawn in code.** The landing page rebuilds the real app interface as live, crisp UI (dashboards, logs, cards), not screenshots. **Our version:** the product scenes (§2 "Showing Hushcue before it is built").
+- **A product tab bar under the hero scene** switches between the product's main areas in place. **Our version:** the mode switcher.
+- **Every section is built the same way** (see "Section anatomy" below), so a long page still reads calmly.
+- **Text and visuals alternate.** Words on the left, product scene on the right, or the scene full-width under the words. There is plenty of empty space around both.
+- **Section colours:** one brand accent, plus a soft tint per section, used only in its small label and a faint glow behind its scene. Never loud.
+- **Serif headlines and sans-serif body text.** The headlines feel editorial and calm; the body stays easy to read.
+- **Hairline borders, gently rounded cards, quiet grey secondary text.**
+- **A rich footer:** grouped link columns (Product, Resources, Project, Legal).
+
+**Section anatomy** (every content section):
+1. A small coloured **label pill** (for example "Interview", "Stealth").
+2. A **serif headline**, one idea, at most two lines.
+3. **Two or three sentences** of plain text, then "Learn more →".
+4. **Three feature rows,** each an icon, a bold short title and one grey line.
+5. The **product scene** for that section.
+
+**Scroll effects:** a little, never much.
+- **Content arrival:** content fades and rises 16–24 px as it comes into view, once (300–500 ms, ease-out).
+- **Scenes start when seen:** each product scene starts playing when it scrolls into view, for example the answer begins to stream.
+- **One quiet progress element** runs down the left side of the story sections and fills as you scroll. **Ours must be our own idea:** for example a thin **sound-wave line** that lights up section by section, as if Hushcue is listening. It fits the product.
+- **No scroll hijacking,** and no parallax beyond a very slight drift on the hero background.
+- **`prefers-reduced-motion`:** everything becomes static.
+
+**What we must NOT copy:**
+- **Railway's own signature elements:** the train-track progress rail, the split-flap stats board, the illustrated sky hero, their wording, icons and colours.
+- **Learn the level, not the look.** Our signature pieces are the sound-wave progress line, the mode switcher and the "you see / they see" stealth slider.
 
 ### Quality gate (how "premium" is checked)
 - **Direction first:** the visual direction is approved by Cyrus **before** the pages are built (first pull request, §5).
