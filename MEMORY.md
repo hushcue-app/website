@@ -17,6 +17,14 @@
   - every change through a pull request, with 1 approval from a code owner (Cyrus), threads resolved, and stale approvals dismissed on new pushes
   - repo admins may merge their own pull requests without an approval, but still only through a pull request
   - squash-merge only
+- **Never write these in repo files** (docs, code, comments, commits or pull requests). Maintainers keep them in private notes outside the repo:
+  - who is assigned to what, and start dates
+  - people's access levels
+  - personal contact details
+  - business plans (pricing, paid tiers, deals)
+  - account and domain status
+  - private feedback about people
+  - the backstory of decisions (2026-11-20)
 - **Original design and words only:** never copy other copilot or interview-tool websites (layouts, mock-ups, text, images). (2026-11-20)
 - **No tracking:** no analytics, pixels, session replay or cookies. Cookieless visitor counts only, and only with Cyrus's OK. (2026-11-20)
 - **Honest claims:** never "undetectable", "pass any interview" or "guaranteed". Never name competitors. (2026-11-20)
@@ -38,5 +46,4 @@
   - every feature has a status badge (Available / In development / Planned)
   - never invent testimonials, user counts, logos or numbers (2026-11-20)
 - **What the site is:** the website for Hushcue (desktop app repo: `hushcue-app/hushcue`). The pages are listed in `docs/BRIEF.md`. (2026-11-20)
-- **Domain:** `hushcue.app` was free on 2026-11-19. It is not bought yet.
 - **Stack:** Next.js + TypeScript + Tailwind is suggested, not settled. The first pull request may propose otherwise. (2026-11-20)

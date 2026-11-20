@@ -54,7 +54,7 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
 ### Pricing (`/pricing`)
 1. **"Free and open source. Bring your own key."**
 2. **A cost calculator:** pick a provider and the interview length, and see the estimated API cost.
-3. **Practice mode:** "coming later" (the future paid tier).
+3. **Practice mode:** "coming later".
 
 ### Docs (`/docs`)
 1. **Install.**
@@ -264,7 +264,7 @@ Cyrus's chosen bar is **railway.com**: clean, professional, and showing what the
 | Styling | Tailwind CSS |
 | Docs | MDX pages |
 | Hosting | Vercel or Cloudflare Pages (free tier) |
-| Domain | `hushcue.app` (not bought yet; Cyrus decides) |
+| Domain | Chosen by Cyrus |
 
 **Not settled yet.** The developer may propose another stack (for example Astro) in the first pull request, with the reason.
 
