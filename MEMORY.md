@@ -12,6 +12,11 @@
   - never ask anyone to paste secrets into a chat with an agent (2026-11-20)
 - **Purchases:** never buy anything (domains, hosting plans, paid services) without Cyrus's OK. (2026-11-20)
 - **Publishing:** making this repo public and deploying to the real domain are Cyrus's decisions. (2026-11-20)
+- **The repo is public,** so `main` is protected (Cyrus's decision, 2026-11-20). The ruleset `protect-main`:
+  - no direct pushes, force-pushes or deletion
+  - every change through a pull request, with 1 approval from a code owner (Cyrus), threads resolved, and stale approvals dismissed on new pushes
+  - repo admins may merge their own pull requests without an approval, but still only through a pull request
+  - squash-merge only
 - **Original design and words only:** never copy other copilot or interview-tool websites (layouts, mock-ups, text, images). (2026-11-20)
 - **No tracking:** no analytics, pixels, session replay or cookies. Cookieless visitor counts only, and only with Cyrus's OK. (2026-11-20)
 - **Honest claims:** never "undetectable", "pass any interview" or "guaranteed". Never name competitors. (2026-11-20)
