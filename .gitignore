@@ -1,0 +1,17 @@
+# Dependencies and builds
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+.turbo/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.DS_Store
+.idea/
+*.log
