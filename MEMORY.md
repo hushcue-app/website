@@ -34,6 +34,12 @@
   - the site must look **very good, clear and premium** (`docs/BRIEF.md` §2)
   - the product is the hero, with restraint and one accent colour
   - Cyrus approves the visual direction (fonts, colours, hero) **before** any pages are built (2026-11-20)
+- **One shared design system** for the app and the site: `design/` in the app repo (`tokens.css`, `DESIGN.md`, `preview.html`), v0.1, 2026-11-20. Its decisions:
+  - **Fonts:** Geist, Geist Mono and Instrument Serif.
+  - **Colour:** one accent, cue teal; mode tints only as small accents.
+  - **Icons:** Lucide.
+  - **The collapsed live UI is the "orb".**
+  - **The site copies `tokens.css`** and never invents its own colours or fonts. Changes to the look go to the design system first.
 - **Quality reference: railway.com,** chosen by Cyrus (2026-11-20).
   - **What to learn:** the product drawn in code on the page, a mode switcher under the hero scene, and the same anatomy in every section (label pill → serif headline → short text → three feature rows → product scene).
   - **Scroll effects:** gentle fade-ins only, with no heavy parallax or scroll hijacking.

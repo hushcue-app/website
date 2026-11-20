@@ -41,7 +41,7 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
 ### Features (`/features`)
 1. **One section per mode:** Interview, Coding, Meeting, Online assessment.
 2. **The Notetaker.**
-3. **The live window:** transparency slider, snapping, compact and bird layouts.
+3. **The live window:** transparency slider, snapping, compact and orb layouts.
 4. **Keyboard shortcuts.**
 5. **Supported AI providers.**
 
@@ -106,34 +106,37 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
    - a designed 404 page, favicon and Open Graph images
 5. **Speed is part of the feel.** It loads instantly: no layout shift, no spinner, no heavy scripts.
 
-### Typography
-- **Typefaces:** one high-quality typeface family, or a refined pair (an elegant display face for big headlines, a clean sans for body text). Self-hosted, open-licensed fonts only.
-- **Type scale:** for example 72 / 56 / 40 / 28 / 20 / 16 px on desktop, scaled down on mobile.
-- **Display headlines:** slightly tight letter-spacing.
+### The shared design system (use it, don't reinvent it)
+The app and the website share **one design system**. It lives in the app repo, in the `design/` folder of `hushcue-app/hushcue` (you have read access):
+- **`tokens.css`:** every colour (dark and light), font, type size, spacing step, radius, shadow and motion timing. Copy this file into the site and use only its variables.
+- **`DESIGN.md`:** principles, brand, colour, typography, the Lucide icon map, every component, and every app screen and live layout.
+- **`preview.html`:** open it in a browser to see everything, including the live window over a call with a working transparency slider. The site's product scenes should look exactly like this.
+
+**Already decided there:**
+
+| | Decision |
+|---|---|
+| **Fonts** | **Geist** (UI and body), **Geist Mono** (code, keys, numbers), **Instrument Serif** (headlines). All open-licensed; self-host them. |
+| **Accent** | One brand colour, **cue teal** (`#2fd3b3` dark / `#0e9f86` light) |
+| **Mode tints** | Small dots, labels and faint glows only: Interview teal, Coding periwinkle, Meeting amber, Assessment rose |
+| **Icons** | **Lucide**, 1.75 px stroke |
+
+**On the website:**
+- **Display sizes:** 72 / 56 / 40 px headlines with -0.02em letter-spacing.
 - **Body text:** 16–18 px, with a line length of 60–75 characters.
+- **Layout:** a 12-column grid at most ~1200 px wide, 120–160 px between sections on desktop.
+- **Gradients and glows:** subtle, only behind product visuals.
+- **Contrast:** WCAG AA.
 
-### Colour
-- **Dark first, with an equally polished light theme:**
-  - a near-black background
-  - off-white text
-  - quiet greys for secondary text
-  - hairline borders (about 8% white on dark)
-- **Accent:** one calm colour, used sparingly: the main button, links, key highlights.
-- **Gradients and glows:** subtle, only behind product visuals. Never rainbow gradients.
-- **Contrast:** all text passes WCAG AA.
-
-### Layout and spacing
-- **Grid:** a 12-column grid, with content at most ~1200 px wide.
-- **Spacing:** an 8 px scale. Big vertical rhythm between sections (about 120–160 px on desktop).
-- **Corner radii:** one consistent set, for example 12 / 16 / 24 px.
+**Want to change the look?** Propose it as a pull request to the design system in the app repo, not as a one-off on the site.
 
 ### Visuals
 - **Product shots:** high-resolution (2×) screenshots and short, muted, looping clips of the real live window over a realistic call.
   - Clips are WebM/MP4, under 2 MB each, with a poster image.
   - They sit in clean window frames with a soft shadow or glow.
 - **Signature moment: the stealth explainer.** A "you see / they see" comparison the visitor can slide between: one side shows the call with Hushcue's answers on top, the other shows the same screen as the interviewer sees it, with Hushcue gone.
-- **Icons:** one open-source set (Lucide or Tabler), one stroke weight, used everywhere.
-- **No stock photos,** and no clip-art mascots at launch.
+- **Icons:** Lucide, 1.75 px stroke, used everywhere (as in the design system).
+- **No stock photos,** and no clip-art mascots at launch. The brand mark is three rising sound bars; the collapsed live UI is called the **orb**.
 
 ### Motion
 - **On scroll:** subtle fades and slides as content appears (200–400 ms, ease-out). No heavy parallax.
@@ -148,8 +151,8 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
 The app is still being built, so the site shows it in three stages.
 
 **Stage 1: design the app's live UI first, as one look for app and site.**
-- **What gets designed:** the live bar, the main panel (one for each mode), the chat panel, the bird, the stealth check dialog and the home screen.
-- **Everything follows the site's design direction:** the same fonts, colours and radii. The app's Phase 1 builds from these designs too.
+- **What gets designed:** the live bar, the main panel (one for each mode), the chat panel, the orb, the stealth check dialog and the home screen. **Done as v0.1 in the design system** (`design/preview.html` in the app repo).
+- **Everything follows the shared design system:** the same fonts, colours and radii. The app's Phase 1 builds from these designs too.
 - **So the website never shows a product that looks different from the real one.**
 
 **Stage 2: interactive "product scenes" on the site, coded rather than filmed.**
@@ -271,13 +274,13 @@ Cyrus's chosen bar is **railway.com**: clean, professional, and showing what the
 ---
 
 ## 5. First pull requests (suggested order)
-1. **Visual direction, for Cyrus to approve:**
-   - a short moodboard
-   - the chosen fonts, colour tokens (dark and light), spacing scale and radii
-   - a designed home-page hero (in Figma, or coded as a single page)
-   - **the app's live window designs** (§2, "Showing Hushcue before it is built": Stage 1). The site and the app share this one look.
+1. **The home-page hero, for Cyrus to approve:**
+   - built with the shared design system's tokens, fonts and icons
+   - the hero headline, the live-window product scene and the mode switcher
+   - Include desktop and mobile screenshots, in light and dark.
    - **Nothing else gets built until this is approved.**
-2. **Project scaffold:** linting, the design tokens as code, the base layout (header, footer), and the theme switch.
+   - Suggestions for the design system itself go to the app repo as a pull request.
+2. **Project scaffold:** linting, `tokens.css` copied in, self-hosted fonts, the base layout (header, footer), and the theme switch.
 3. **The home page:** the interactive product scenes (scripted, labelled "Interactive preview") and the stealth "you see / they see" explainer.
 4. **More pages:** Features, Download and Pricing (with the cost calculator).
 5. **Docs and legal:** Docs (MDX), Privacy, Responsible use, Terms and the 404 page.
