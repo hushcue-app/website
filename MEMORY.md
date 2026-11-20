@@ -17,6 +17,10 @@
 - **Honest claims:** never "undetectable", "pass any interview" or "guaranteed". Never name competitors. (2026-11-20)
 
 ## Decisions
+- **Design bar:**
+  - the site must look **very good, clear and premium** (`docs/BRIEF.md` §2)
+  - the product is the hero, with restraint and one accent colour
+  - Cyrus approves the visual direction (fonts, colours, hero) **before** any pages are built (2026-11-20)
 - **What the site is:** the website for Hushcue (desktop app repo: `hushcue-app/hushcue`). The pages are listed in `docs/BRIEF.md`. (2026-11-20)
 - **Domain:** `hushcue.app` was free on 2026-11-19. It is not bought yet.
 - **Stack:** Next.js + TypeScript + Tailwind is suggested, not settled. The first pull request may propose otherwise. (2026-11-20)
