@@ -27,7 +27,7 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
    - a **large product scene** below: the live window over a realistic video call, in a framed window on an atmospheric background of our own design
    - a **mode switcher** under the scene: Interview · Coding · Meeting · Assessment. It swaps the scene in place.
 2. **One section per idea,** each built the same way (§2 "Section anatomy"):
-   - **Interview:** "Know what to say when the question lands." Live answers from your resume and the job post.
+   - **Interview:** the cue card under your camera: the question, the whole answer from your own stories, and live captions. (Headline to be written fresh, in our own words.)
    - **Coding:** reads the problem on your screen; gives the approach, code and complexity, or hints only.
    - **Meeting and Notetaker:** live notes, decisions, action items, and talking points when you are asked.
    - **Online assessment:** the likely answer, with an honest confidence level.
@@ -41,7 +41,7 @@ A Railway-style story, explained in §2 under "The reference: Railway-level poli
 ### Features (`/features`)
 1. **One section per mode:** Interview, Coding, Meeting, Online assessment.
 2. **The Notetaker.**
-3. **The live window:** transparency slider, snapping, compact and orb layouts.
+3. **The live view:** the cue card (question, answer, live captions), the side panel, the command palette; Full, Compact and Orb views; transparency per surface.
 4. **Keyboard shortcuts.**
 5. **Supported AI providers.**
 
@@ -151,14 +151,14 @@ The app and the website share **one design system**. It lives in the app repo, i
 The app is still being built, so the site shows it in three stages.
 
 **Stage 1: design the app's live UI first, as one look for app and site.**
-- **What gets designed:** the live bar, the main panel (one for each mode), the chat panel, the orb, the stealth check dialog and the home screen. **Done as v0.1 in the design system** (`design/preview.html` in the app repo).
+- **What gets designed:** the cue card (one for each mode), the side panel and its tabs, the command palette, the orb, pre-flight, Today and an opportunity page. **Done as v0.3 in the design system** (`design/preview.html` in the app repo).
 - **Everything follows the shared design system:** the same fonts, colours and radii. The app's Phase 1 builds from these designs too.
 - **So the website never shows a product that looks different from the real one.**
 
 **Stage 2: interactive "product scenes" on the site, coded rather than filmed.**
 - **What a scene is:** the live window recreated in code from those designs, playing a scripted session. For example:
   - an interviewer's question appears in the transcript
-  - the answer streams in word by word
+  - the question appears, the answer's points fill in, and the live captions roll
   - the visitor can drag the transparency slider and switch between Interview, Coding, Meeting and Online assessment
 - **The stealth explainer** is a scene too: slide between "you see" (the call, with Hushcue's answers on top) and "they see" (the same call, with Hushcue gone).
 - **Why code instead of video:**
@@ -174,7 +174,7 @@ The app is still being built, so the site shows it in three stages.
 
 **Stage 3: real proof, once each part works.**
 - As each part of the app ships, add real screen recordings and screenshots next to, or instead of, the scenes.
-- Example: once the app's live bar exists, a 10-second real clip of it answering in a call.
+- Example: once the app's cue card exists, a 10-second real clip of it answering in a call.
 - The scenes stay, because they explain things well. The recordings prove they are real.
 
 **Honesty rules while the app is unfinished:**

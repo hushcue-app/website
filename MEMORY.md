@@ -40,6 +40,11 @@
   - **Icons:** Lucide.
   - **The collapsed live UI is the "orb".**
   - **The site copies `tokens.css`** and never invents its own colours or fonts. Changes to the look go to the design system first.
+- **The product's own UX, as shown on the site** (design v0.3, 2026-11-20). Product scenes show:
+  - a **cue card** under the webcam (controls, the question, the whole answer, live captions)
+  - a **side panel** docked to the screen edge (tabs by mode)
+  - the command palette, the orb, pre-flight, and the app organised around opportunities
+  - **Never reuse another copilot product's headlines, layout, labels or wording.** One headline once copied by mistake was removed.
 - **Quality reference: railway.com,** chosen by Cyrus (2026-11-20).
   - **What to learn:** the product drawn in code on the page, a mode switcher under the hero scene, and the same anatomy in every section (label pill → serif headline → short text → three feature rows → product scene).
   - **Scroll effects:** gentle fade-ins only, with no heavy parallax or scroll hijacking.
