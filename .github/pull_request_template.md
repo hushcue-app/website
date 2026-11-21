@@ -10,4 +10,5 @@
 - [ ] No tracking scripts, cookies or third-party widgets added
 - [ ] Text is honest (no "undetectable", "guaranteed", competitor names); design is original
 - [ ] No secrets or `.env` files committed
+- [ ] Every commit is signed off (`git commit -s`)
 - [ ] Commits are mine, with no AI co-author or "Generated with" lines

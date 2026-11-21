@@ -11,3 +11,9 @@ The public website for [Hushcue](https://github.com/hushcue-app/hushcue): landin
 
 ## Development
 Added with the scaffold (the first pull request).
+
+## License
+The website is free software under the **GNU General Public License, version 3 or any later version** (GPL-3.0-or-later), the same licence as the app. The full text is in [LICENSE](LICENSE).
+
+- **The name and logo:** the licence covers the code and text. It gives no rights to the Hushcue name or logo. If you build on this site, please give yours its own name and logo.
+- **Contributions** come in under the same licence, with a sign-off on every commit ([CONTRIBUTING.md](CONTRIBUTING.md) §4).

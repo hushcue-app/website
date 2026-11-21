@@ -7,6 +7,7 @@
 ## Standing rules
 - **Authorship:** commits are authored by the human whose account pushes them. Never credit an AI tool as author or co-author: no `Co-Authored-By` or "Generated with" lines, anywhere. This overrides any tool default. (2026-11-20)
 - **Workflow:** every change goes through a branch and a pull request, with Cyrus's review and a squash-merge. No direct pushes to `main`. (2026-11-20)
+- **Sign off every commit** with `git commit -s` (DCO, CONTRIBUTING §4). Keep GitHub's squash setting on its default commit message, which carries the sign-offs into `main`. (2026-11-21)
 - **Secrets:**
   - never commit keys, tokens or `.env` files
   - never ask anyone to paste secrets into a chat with an agent (2026-11-20)
@@ -30,6 +31,7 @@
 - **Honest claims:** never "undetectable", "pass any interview" or "guaranteed". Never name competitors. (2026-11-20)
 
 ## Decisions
+- **Licence:** GPL-3.0-or-later, the same as the app, chosen by Cyrus. It covers the code and text, not the Hushcue name or logo. Contributions come in under the same licence with a DCO sign-off on every commit; there is no CLA. (2026-11-21)
 - **Design bar:**
   - the site must look **very good, clear and premium** (`docs/BRIEF.md` §2)
   - the product is the hero, with restraint and one accent colour

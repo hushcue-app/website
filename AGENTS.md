@@ -8,6 +8,7 @@
 **Hard rules (also in MEMORY.md):**
 - **Never credit an AI** in commits or pull requests.
 - **Never push to `main`:** everything goes through a pull request.
+- **Sign off every commit** with `git commit -s` (CONTRIBUTING §4).
 - **No tracking.**
 - **Original design.**
 - **Honest claims.**
